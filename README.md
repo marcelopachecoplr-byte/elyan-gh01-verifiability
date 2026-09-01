@@ -8,3 +8,5 @@ This repository intentionally preserves a three-step CI sequence:
 3. recovery PASS.
 
 The failed run is evidence and must remain visible.
+
+GH-01 baseline branch marker: A
