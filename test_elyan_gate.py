@@ -10,8 +10,7 @@ class EvidenceGateTests(unittest.TestCase):
             "receipt_id": "RECEIPT-001",
             "duplicate_origin_count": 0,
         }
-        # GH-01 deliberate falsifier: this assertion is intentionally wrong.
-        self.assertFalse(validate_evidence_record(record))
+        self.assertTrue(validate_evidence_record(record))
 
     def test_rejects_duplicate_origin(self):
         record = {
